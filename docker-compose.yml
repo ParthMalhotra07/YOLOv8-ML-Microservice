@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  yolo-microservice:
+    build: .
+    container_name: yolov8-ml-microservice
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    environment:
+      - FLASK_ENV=development
+      - PYTHONUNBUFFERED=1
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
