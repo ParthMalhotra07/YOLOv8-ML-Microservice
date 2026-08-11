@@ -71,3 +71,7 @@ python predict.py --model best.pt
 
 * **Web UI**: Returns a side-by-side comparison of the original image and the annotated image featuring confidence scores for `FireExtinguisher`, `ToolBox`, and `OxygenTank`.
 * **CLI Engine**: Generates a comprehensive metrics table detailing `mAP50`, overall `Precision`, and `Recall`. Automatically saves a `confusion_matrix.png` to map out class-level overlaps and background misclassifications.
+
+---
+
+**Status:** ✅ Actively Maintained (2026)
